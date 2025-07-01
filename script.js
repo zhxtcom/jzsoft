@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 下载按钮点击事件
     const downloadLinks = {
         'github-link': 'https://github.com/zhxtcom/jzsoft/releases',
-        'baidu-link': 'https://pan.baidu.com/s/1HS48qK0_5ds-2iXJRCkYVw?pwd=yty8'
+        'baidu-link': 'https://share.weiyun.com/2SyWSV61'
     };
     
     Object.keys(downloadLinks).forEach(id => {
