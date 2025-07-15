@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>桔子大魔王 SCUM 一站式服务器管理工具 - 预览</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { background: linear-gradient(135deg, #232526 0%, #414345 100%); color: #f3f3f3; font-family: 'Orbitron', '微软雅黑', Arial, sans-serif; margin: 0; min-height: 100vh; }
+    .main { max-width: 900px; margin: 40px auto; background: rgba(40,44,52,0.98); border-radius: 18px; box-shadow: 0 4px 24px #0006; padding: 36px 32px; }
+    h1 { color: #ff9900; font-size: 2.2rem; margin-bottom: 16px; letter-spacing: 3px; }
+    .desc { font-size: 1.18rem; color: #ffe0b2; margin-bottom: 28px; line-height: 1.8; }
+    .features { margin-bottom: 32px; }
+    .features h2 { color: #ff9900; font-size: 1.2rem; margin-bottom: 10px; }
+    .features ul { padding-left: 22px; }
+    .features li { margin-bottom: 10px; font-size: 1.05rem; }
+    .screenshots { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; }
+    .screenshots img { width: 220px; border-radius: 10px; border: 2px solid #444; background: #222; box-shadow: 0 2px 12px #0007; margin-bottom: 10px; }
+    .back { display: inline-block; margin-top: 18px; color: #ff9900; text-decoration: none; font-size: 1.1rem; border: 1px solid #ff9900; border-radius: 6px; padding: 8px 24px; transition: background 0.2s, color 0.2s; }
+    .back:hover { background: #ff9900; color: #222; }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>桔子大魔王 SCUM 一站式服务器管理工具</h1>
+    <div class="desc">
+      该工具集成了SCUM服务器日常管理的所有核心功能，界面美观，操作便捷，极大提升服务器运维效率。无论是新手还是资深管理员，都能轻松驾驭，打造高效、稳定的服务器环境。
+    </div>
+    <div class="features">
+      <h2>主要功能：</h2>
+      <ul>
+        <li>服务器配置一站式管理，支持多种参数自定义，快速部署。</li>
+        <li>自动备份与还原，保障服务器数据安全，防止意外丢失。</li>
+        <li>自动更新服务器，保持环境最新，减少维护成本。</li>
+        <li>日志实时查看与分析，便于问题排查和安全监控。</li>
+        <li>傻瓜式操作，新手都可以一键开服。</li>
+        <li>支持一键下载服务器文件，也可以指定服务器文件。</li>
+        <li>实时监控玩家聊天，无须进入游戏。</li>
+        <li>功能强大，后续开发更多功能集成。</li>
+      </ul>
+    </div>
+    <div class="screenshots" style="flex-direction:column;align-items:center;gap:40px;">
+      <div style="text-align:center;">
+        <img src="Server_Manger/1.png" alt="服务器管理工具主界面" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/1.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">主界面：服务器整体状态一览，功能分区清晰，便于快速切换各项管理模块。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/2.png" alt="服务器配置管理" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/2.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">聊天监控：后台轻松查看玩家实时聊天，无须登入游戏。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/3.png" alt="自动备份与还原" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/3.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">开锁记录查看，支持筛选玩家，锁类型等，方便查挂。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/4.png" alt="一键更新服务器" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/4.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">载具损坏记录，随时随地查看玩家载具损坏情况。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/5.png" alt="日志实时查看" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/5.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">经济系统，随时查看玩家商店交易记录。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/6.png" alt="玩家管理功能" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/6.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">近期玩家统计，方便查看玩家数据，登录时长等。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/7.png" alt="多任务并行处理" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/7.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">基本设置，服务器名字，端口等自动获取修改。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/8.png" alt="操作历史记录" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/8.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">自定义开启反作弊模式，日志模式，和日志目录自定义设定。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/9.png" alt="界面多屏适配" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/9.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">更先进的设置自动重启功能，可以定义日期，时间，随时添加删除。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/10.png" alt="安全机制" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/10.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">自动备份数据库及重要文件设置，防止数据丢失。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="Server_Manger/11.png" alt="更多功能扩展" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('Server_Manger/11.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">启动自动更新功能，自动检测服务器是否有更新，无需人工干预！</div>
+      </div>
+    </div>
+    <div id="imgModal" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;">
+      <span style="position:absolute;top:40px;right:60px;font-size:48px;color:#fff;cursor:pointer;z-index:10001;" onclick="closeImgModal()">×</span>
+      <img id="modalImg" src="" style="max-width:90vw;max-height:80vh;box-shadow:0 0 24px #000;display:block;margin:auto;">
+    </div>
+    <script>
+      function openImgModal(src) {
+        document.getElementById('imgModal').style.display = 'flex';
+        document.getElementById('modalImg').src = src;
+      }
+      function closeImgModal() {
+        document.getElementById('imgModal').style.display = 'none';
+        document.getElementById('modalImg').src = '';
+      }
+      document.getElementById('imgModal').onclick = function(e) {
+        if(e.target === this) closeImgModal();
+      }
+    </script>
+    <div style="margin-top:32px;text-align:center;">
+      <button class="download-btn" style="font-size:1.15rem;padding:12px 38px;background:linear-gradient(90deg,#ff9900 60%,#ff6600 100%);color:#fff;border:none;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px #0006;" onclick="window.open('https://jq.qq.com/?_wv=1027&k=912885706')">一键加QQ群下载</button>
+      <div style="margin-top:10px;color:#ffcc80;font-size:1.08rem;">QQ群号：912885706&nbsp;&nbsp;|&nbsp;&nbsp;作者QQ：130228228</div>
+    </div>
+    <a class="back" href="index.html">返回首页</a>
+  </div>
+</body>
+</html>

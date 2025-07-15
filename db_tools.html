@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>桔子大魔王 SCUM 一键数据库编辑工具 - 预览</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { background: linear-gradient(135deg, #232526 0%, #414345 100%); color: #f3f3f3; font-family: 'Orbitron', '微软雅黑', Arial, sans-serif; margin: 0; min-height: 100vh; }
+    .main { max-width: 900px; margin: 40px auto; background: rgba(40,44,52,0.98); border-radius: 18px; box-shadow: 0 4px 24px #0006; padding: 36px 32px; }
+    h1 { color: #ff9900; font-size: 2.2rem; margin-bottom: 16px; letter-spacing: 3px; }
+    .desc { font-size: 1.18rem; color: #ffe0b2; margin-bottom: 28px; line-height: 1.8; }
+    .features { margin-bottom: 32px; }
+    .features h2 { color: #ff9900; font-size: 1.2rem; margin-bottom: 10px; }
+    .features ul { padding-left: 22px; }
+    .features li { margin-bottom: 10px; font-size: 1.05rem; }
+    .screenshots { display: flex; gap: 32px; justify-content: center; margin-bottom: 32px; }
+    .screenshots img { width: 340px; border-radius: 10px; border: 2px solid #444; background: #222; box-shadow: 0 2px 12px #0007; }
+    .back { display: inline-block; margin-top: 18px; color: #ff9900; text-decoration: none; font-size: 1.1rem; border: 1px solid #ff9900; border-radius: 6px; padding: 8px 24px; transition: background 0.2s, color 0.2s; }
+    .back:hover { background: #ff9900; color: #222; }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>桔子大魔王 SCUM 一键数据库编辑工具</h1>
+    <div class="desc">
+      本工具专为SCUM服务器管理员打造，集成数据库管理、数据批量处理与备份等多项实用功能。界面直观，操作简单，极大提升服务器数据维护效率，是SCUM服务器管理的必备利器。
+    </div>
+    <div class="features">
+      <h2>主要功能：</h2>
+      <ul>
+        <li>一键导入单机数据库，支持服务器模式，无需关闭服务器修改。</li>
+        <li>一键安全修改玩家属性8555，无需关闭服务器，安全可靠。</li>
+        <li>一键添加开发者权限，无需关闭服务器，安全可靠</li>
+        <li>一键任何修改玩家建筑等级，任意1~5级随意修改。（此功能需关闭服务器）</li>
+        <li>安全机制完善，防止误操作和数据丢失。</li>
+      </ul>
+    </div>
+    <div class="screenshots" style="flex-direction:column;align-items:center;gap:40px;">
+      <div style="text-align:center;">
+        <img src="DB_Tools/1.png" alt="数据库工具主界面大图" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('DB_Tools/1.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">主界面：一目了然的数据库管理操作区，一键8555，一键满技能，一键修改建筑等级，开发者权限添加删除等。</div>
+      </div>
+      <div style="text-align:center;">
+        <img src="DB_Tools/2.png" alt="数据库工具批量编辑大图" style="width:90%;max-width:700px;cursor:pointer;" onclick="openImgModal('DB_Tools/2.png')">
+        <div style="margin-top:12px;color:#ffe0b2;font-size:1.08rem;">一键修改任何队长领地旗范围内所有建筑等级，省时快捷，解放双手一个个手动升级烦恼。</div>
+      </div>
+    </div>
+    <div id="imgModal" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;">
+      <span style="position:absolute;top:40px;right:60px;font-size:48px;color:#fff;cursor:pointer;z-index:10001;" onclick="closeImgModal()">×</span>
+      <img id="modalImg" src="" style="max-width:90vw;max-height:80vh;box-shadow:0 0 24px #000;display:block;margin:auto;">
+    </div>
+    <script>
+      function openImgModal(src) {
+        document.getElementById('imgModal').style.display = 'flex';
+        document.getElementById('modalImg').src = src;
+      }
+      function closeImgModal() {
+        document.getElementById('imgModal').style.display = 'none';
+        document.getElementById('modalImg').src = '';
+      }
+      document.getElementById('imgModal').onclick = function(e) {
+        if(e.target === this) closeImgModal();
+      }
+    </script>
+    <div style="margin-top:32px;text-align:center;">
+      <button class="download-btn" style="font-size:1.15rem;padding:12px 38px;background:linear-gradient(90deg,#ff9900 60%,#ff6600 100%);color:#fff;border:none;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px #0006;" onclick="window.open('https://jq.qq.com/?_wv=1027&k=912885706')">一键加QQ群下载</button>
+      <div style="margin-top:10px;color:#ffcc80;font-size:1.08rem;">QQ群号：912885706&nbsp;&nbsp;|&nbsp;&nbsp;作者QQ：130228228</div>
+    </div>
+    <a class="back" href="index.html">返回首页</a>
+  </div>
+</body>
+</html>

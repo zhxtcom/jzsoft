@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>桔子大魔王 SCUM 工具集</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', '微软雅黑', Arial, sans-serif;
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: #f3f3f3;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(30,34,40,0.95);
+      padding: 32px 0 16px 0;
+      text-align: center;
+      border-bottom: 3px solid #ff9900;
+      box-shadow: 0 2px 8px #0008;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 6px;
+      color: #ff9900;
+      margin: 0 0 8px 0;
+      text-shadow: 2px 2px 8px #000a;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin: 0;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 40px auto 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 60px;
+      justify-content: center;
+    }
+    .tool-card {
+      background: rgba(40,44,52,0.98);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #0006;
+      width: 520px;
+      min-height: 480px;
+      padding: 38px 36px 28px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 2px solid #ff9900;
+    }
+    .tool-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 32px #ff990088;
+    }
+    .tool-card img {
+       width: 100%;
+       height: 80%;
+       max-height: 80%;
+       object-fit: cover;
+       margin-bottom: 0;
+       border-radius: 12px 12px 0 0;
+       background: #222;
+       border: 1px solid #444;
+       display: block;
+     }
+    .tool-card h2 {
+      font-size: 1.4rem;
+      color: #ff9900;
+      margin: 0 0 10px 0;
+      letter-spacing: 2px;
+    }
+    .tool-card p {
+      font-size: 1rem;
+      color: #eee;
+      margin: 0 0 18px 0;
+      text-align: center;
+      min-height: 48px;
+    }
+    .download-btn {
+      background: linear-gradient(90deg, #ff9900 60%, #ff6600 100%);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 32px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #0006;
+      transition: background 0.2s, box-shadow 0.2s;
+      margin-bottom: 8px;
+    }
+    .download-btn:hover {
+      background: linear-gradient(90deg, #ff6600 60%, #ff9900 100%);
+      box-shadow: 0 4px 16px #ff990088;
+    }
+    .qq-info {
+      margin-top: 12px;
+      font-size: 0.98rem;
+      color: #ffcc80;
+      text-align: center;
+    }
+    .future {
+      margin: 60px auto 0 auto;
+      max-width: 900px;
+      background: rgba(30,34,40,0.93);
+      border-radius: 14px;
+      padding: 32px 24px;
+      border: 2px dashed #ff9900;
+      color: #ffcc80;
+      text-align: center;
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 12px #0005;
+    }
+    footer {
+      margin: 48px 0 0 0;
+      padding: 18px 0;
+      text-align: center;
+      color: #888;
+      font-size: 0.98rem;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>桔子大魔王 SCUM 工具集（接有偿魔改任意服务器）</h1>
+    <p>专为SCUM服务器玩家与管理者打造的实用工具合集</p>
+  </header>
+  <div class="container">
+    <div class="tool-card" onclick="window.location.href='db_tools.html'" style="cursor:pointer;">
+      <img src="DB_Tools/1.png" alt="数据库工具图标">
+      <h2 style="margin-top:18px;">SCUM 一键数据库编辑工具</h2>
+      <p style="margin-top:12px;">SCUM服务器一键修改8555，一键修改满技能，一键修改建筑等级，操作简便，安全高效。</p>
+
+    </div>
+    <div class="tool-card" onclick="window.location.href='server_manger.html'" style="cursor:pointer;">
+      <img src="Server_Manger/1.png" alt="服务器管理工具图标">
+      <h2>SCUM 一站式服务器管理工具</h2>
+      <p>SCUM自建服管理面板，傻瓜式操作，支持日志，自动备份，自动重启，自动更新，显示玩家及玩家分析等强大功能。</p>
+
+
+    </div>
+
+  </div>
+  <div class="future">
+    <strong>更多SCUM辅助工具正在开发中，欢迎提出建议！</strong><br>
+    本站将持续更新，后续会有更多实用软件上线，敬请关注QQ群：912885706。
+  </div>
+  <footer>
+    &copy; 2025 桔子大魔王 SCUM工具集 | 作者QQ：130228228
+  </footer>
+</body>
+</html>
